@@ -3,9 +3,9 @@ mysql:
   ports:
     - "3306:3306"
   volumes:
-    - ~/db/mysql:/var/lib/mysql
-    - ./config.cnf:/etc/mysql/conf.d/config.cnf
-    - ./init-dump:/docker-entrypoint-initdb.d
+    - ~/Documents/dockerShare/mysql/db:/var/lib/mysql
+    - ~/Documents/dockerShare/mysql/config.cnf:/etc/mysql/conf.d/config.cnf
+    - ~/Documents/dockerShare/mysql/init-dump:/docker-entrypoint-initdb.d
   environment:
     TERM: xterm
     APP_ENV: dev
